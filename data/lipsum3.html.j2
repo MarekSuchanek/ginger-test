@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{%- macro lipsum() %}
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris orci quam, scelerisque at felis porta, scelerisque maximus turpis. Suspendisse pellentesque, ligula nec feugiat elementum, sem sem interdum tortor, vel eleifend elit ipsum in sem. Nullam dignissim, mi a placerat euismod, lorem neque ornare enim, vitae euismod ipsum purus et lorem. Mauris gravida eget purus eu blandit. Nam vestibulum accumsan sem. Sed tincidunt cursus urna, at pharetra justo bibendum sit amet. Aenean nisl quam, eleifend sed eros quis, tincidunt pretium quam. In eu magna sagittis, volutpat tellus vitae, congue justo. In consectetur sapien non turpis malesuada efficitur.</p>
+
+  <p>Suspendisse vestibulum mi sed luctus volutpat. Cras tristique quam vitae purus finibus lobortis at vel odio. Sed vehicula augue sit amet velit pretium, eget venenatis tortor ultrices. In hac habitasse platea dictumst. Etiam et dolor at libero tincidunt ultrices sit amet eu nibh. Praesent lacinia imperdiet diam nec ornare. Phasellus a varius sem. Aenean posuere velit dignissim molestie auctor. In nec rutrum tortor. Duis accumsan ornare nunc ac pharetra. Cras ligula odio, feugiat sed convallis eu, tristique vel justo. Integer mollis ante sit amet magna dictum facilisis a quis arcu. Vestibulum sed mollis nibh, et accumsan leo. Aliquam erat volutpat. Proin malesuada, ante eu accumsan rhoncus, orci elit congue lorem, in aliquet quam magna ac velit.</p>
+
+  <p>Aenean euismod tempus lectus lobortis pretium. Fusce urna leo, accumsan eget interdum id, pharetra et enim. Phasellus ornare, nulla ut ullamcorper sodales, justo neque commodo turpis, eu sagittis elit neque vel urna. In hac habitasse platea dictumst. Sed bibendum, ipsum consequat malesuada cursus, ex nibh malesuada ante, ac tempus velit sem rutrum velit. Phasellus efficitur lacus vel ex dictum tristique. Nunc interdum mattis ante, id laoreet purus. Morbi tristique ipsum sit amet leo sollicitudin fringilla et eget erat. In commodo magna dolor. Sed quis est ut justo sagittis tristique. Maecenas sollicitudin nec arcu a mollis. Fusce dignissim venenatis dui, a placerat sem dapibus sed. Pellentesque vehicula ultricies massa a laoreet. Proin ut eleifend sapien. Duis a dictum nisi, id consequat metus.</p>
+
+  <p>Nulla facilisi. Praesent nec dui ac nibh egestas mollis. Etiam id quam vel orci ornare placerat ac ut purus. In eu ligula enim. Praesent id varius ligula, eget tempor tortor. Sed convallis nisi metus, nec convallis eros dapibus nec. Nam posuere accumsan nulla vitae euismod. Sed vel mauris bibendum, posuere orci non, dapibus ex. Nullam sit amet auctor purus. Etiam scelerisque felis et lacus commodo sollicitudin. Ut hendrerit libero non massa pulvinar commodo. Ut pulvinar nibh enim.</p>
+
+  <p>Duis sollicitudin rhoncus justo, id gravida arcu faucibus in. Aenean vulputate aliquet felis nec dictum. Donec aliquet ultrices quam, quis rutrum lorem sodales sed. Aenean ultricies faucibus enim ac tincidunt. Ut tincidunt feugiat justo quis congue. Morbi vestibulum luctus purus. Nullam non erat a ipsum tristique blandit. Integer feugiat justo mi, vitae volutpat elit ultrices interdum. Etiam aliquet est id dui vulputate, vitae ullamcorper elit tristique. Suspendisse porta lorem eget tellus mattis tristique. Etiam ut cursus felis, id placerat ante. Curabitur fringilla finibus ex at fermentum. Fusce gravida efficitur augue, quis varius urna efficitur ut.</p>
+{% endmacro -%}
+<html>
+  <head>
+    <title>Lipsum test #3</title>
+  </head>
+  </body>
+    <h1>Lipsum test #3</h1>
+  {%- for x in xs -%}
+    {{ lipsum() }}
+  {%- endfor -%}
+  </body>
+</html>

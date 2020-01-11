@@ -1,0 +1,36 @@
+name:                ginger-test
+version:             0.1.0.0
+github:              "MarekSuchanek/ginger-test"
+license:             BSD3
+author:              "Marek Suchánek"
+maintainer:          "suchama4@fit.cvut.cz"
+copyright:           "2020 Marek Suchánek"
+
+extra-source-files:
+- README.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/MarekSuchanek/ginger-test#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- containers
+- ginger
+- hashable
+- text
+- unordered-containers
+
+executables:
+  ginger-test-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
